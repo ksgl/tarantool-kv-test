@@ -1,5 +1,8 @@
 # An HTTP-server to serve a key-value database (Tarantool)
 
+### Deployment
+API lives here [here](http://134.209.200.24:8888/kv).
+
 ### Build Instructions
 Assuming you've cloned this repo:
 ```
