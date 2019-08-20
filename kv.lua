@@ -40,7 +40,7 @@ local function update_pair(req)
 
         return http_json(200, { key = id, value = new_pair[2] })
     else
-        return http_json(404, { message = 'Pair with this key doesn\'t exist' })
+        return http_json(404, { message = 'Pair with this key doesn\'t exist.' })
     end
 end
 
@@ -52,7 +52,7 @@ local function get_pair(req)
     if pair ~= nil then
         return http_json(200, { key = id, value = pair[2] })
     else
-        return http_json(404, { message = 'Pair with this key doesn\'t exist' })
+        return http_json(404, { message = 'Pair with this key doesn\'t exist.' })
     end
 end
 
