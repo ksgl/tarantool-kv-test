@@ -1,4 +1,4 @@
-# An HTTP-server to serve a key-value database (Tarantool).
+# An HTTP-server to serve a key-value database (Tarantool)
 
 ### Build Instructions
 Assuming you've cloned this repo:
