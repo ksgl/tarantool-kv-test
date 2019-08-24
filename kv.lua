@@ -33,6 +33,10 @@ local function update_pair(req)
     local id = req:stash('id')
     local v = req:param('value')
 
+    if type(v) ~= 'table' then
+        return http_json(400, { message = 'Bad request body.' })
+    end
+
     pair = box.space[space_name]:get{ id }
 
     if pair ~= nil then
@@ -72,7 +76,8 @@ end
 
 
 box.cfg {
-    log = 'kv.log'
+    log = 'kv.log',
+    log_format='json'
 }
 
 box.schema.space.create(space_name, { if_not_exists = true })
