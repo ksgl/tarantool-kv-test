@@ -11,6 +11,12 @@ docker run -p 8888:8888 --name tarantool-api-server -t tarantool-api-server
 ```
 Now you have your server available at `http://localhost:8888`
 
+### Testing - Python Unit Tests
+To run tests simply do
+```
+./tests.py
+```
+
 ### API
 Method   | Path     | Body                                          | Response                               |
 -------- | -------- | --------------------------------------------- | -------------------------------------- |
